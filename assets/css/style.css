@@ -44,6 +44,101 @@ body {
   --box-shadow-p1: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
   --box-shadow-p2: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
 }
+/*----------- Contact -----------*/
+.contact-area .contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-area .contact-form .form-group .form-control {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 0;
+  font-size: 14px;
+  height: 41px;
+  padding: 9px 14px;
+}
+
+.contact-area .contact-form .form-group .form-control:-webkit-autofill,
+.contact-area .contact-form .form-group .form-control:-webkit-autofill:hover,
+.contact-area .contact-form .form-group .form-control:-webkit-autofill:focus,
+.contact-area .contact-form .form-group .form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-text-fill-color: #555 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contact-area .contact-form .form-group .form-control,
+.contact-area .contact-form .form-group .form-control::-webkit-input-placeholder {
+  color: #555;
+}
+
+.contact-area .contact-form .form-group .form-control,
+.contact-area .contact-form .form-group .form-control::-moz-placeholder {
+  color: #555;
+}
+
+.contact-area .contact-form .form-group .form-control,
+.contact-area .contact-form .form-group .form-control:-ms-input-placeholder {
+  color: #555;
+}
+
+.contact-area .contact-form .form-group .form-control,
+.contact-area .contact-form .form-group .form-control::-ms-input-placeholder {
+  color: #555;
+}
+
+.contact-area .contact-form .form-group .form-control,
+.contact-area .contact-form .form-group .form-control::placeholder {
+  color: #555;
+}
+
+.contact-area .contact-form .form-group .form-control:focus {
+  box-shadow: none;
+}
+
+.contact-area .contact-form .form-group.form-message #contact-message {
+  height: auto;
+}
+
+.contact-area .contact-form .form-submit #contact-submit {
+  padding: 10px 30px;
+}
+
+.contact-area .contact-form .form-submit #contact-submit.wait {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+
+.contact-area .contact-form .form-submit #contact-submit.success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.contact-area .contact-form .form-submit #contact-submit.error {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.contact-area .contact-form .form-submit .contact-feedback {
+  display: none;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.contact-area .contact-form .form-submit .contact-feedback.success {
+  color: #28a745;
+}
+
+.contact-area .contact-form .form-submit .contact-feedback.error {
+  color: #dc3545;
+}
+
+@media (max-width: 1199.98px) {
+  .contact-area .contact-form .form-group {
+    margin-bottom: 30px;
+  }
+}
 
 .dark {
   --p2: 84, 182, 137;
