@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const templateID = "template_6ieshmg";
       // Uncomment this for working demo
 
-       emailjs.sendForm(serviceID, templateID, this).then(
+       emailjs.sendForm(service_46ntgno, template_6ieshmg, this).then(
          () => {
            btn.value = "Send Email";
            Swal.fire("Message Sent Successfully", "", "success");
