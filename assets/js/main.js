@@ -158,34 +158,34 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // contact -Send us a message
-  const btn = document.getElementById("contact-submit-btn");
-  btn && emailjs.init("fpwvo3ThNZIbrHexI");
-  const contactForm = document.getElementById("contact-form");
-  contactForm &&
-    contactForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-      btn.value = "Sending...";
-      const serviceID = "service_46ntgno";
-      const templateID = "template_6ieshmg";
-      // Uncomment this for working demo
-
-       emailjs.sendForm(serviceID, templateID, this).then(
-         () => {
-           btn.value = "Send Email";
-           Swal.fire("Message Sent Successfully", "", "success");
-           document.querySelector("#name").value = "";
-           document.querySelector("#email").value = "";
-           document.querySelector("#phone").value = "";
-           document.querySelector("#location").value = "";
-           document.querySelector("#message").value = "";
-         },
-         (err) => {
-           btn.value = "Send Email";
-           alert(JSON.stringify(err));
-         }
-       );
-    });
+    // contact -Send us a message
+    const btn = document.getElementById("contact-submit-btn");
+    btn && emailjs.init("fpwvo3ThNZIbrHexI");
+    const contactForm = document.getElementById("contact-form");
+    contactForm &&
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        btn.value = "Sending...";
+        const serviceID = "service_46ntgno";
+        const templateID = "template_6ieshmg";
+        // Uncomment this for working demo
+  
+        // emailjs.sendForm(serviceID, templateID, this).then(
+        //   () => {
+        //     btn.value = "Send Email";
+        //     Swal.fire("Message Sent Successfully", "", "success");
+        //     document.querySelector("#name").value = "";
+        //     document.querySelector("#email").value = "";
+        //     document.querySelector("#phone").value = "";
+        //     document.querySelector("#location").value = "";
+        //     document.querySelector("#message").value = "";
+        //   },
+        //   (err) => {
+        //     btn.value = "Send Email";
+        //     alert(JSON.stringify(err));
+        //   }
+        // );
+      });
 
   // ----------portfolio page js-------------
 
