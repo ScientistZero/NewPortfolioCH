@@ -170,21 +170,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const templateID = "template_6ieshmg";
         // Uncomment this for working demo
   
-        // emailjs.sendForm(serviceID, templateID, this).then(
-        //   () => {
-        //     btn.value = "Send Email";
-        //     Swal.fire("Message Sent Successfully", "", "success");
-        //     document.querySelector("#name").value = "";
-        //     document.querySelector("#email").value = "";
-        //     document.querySelector("#phone").value = "";
-        //     document.querySelector("#location").value = "";
-        //     document.querySelector("#message").value = "";
-        //   },
-        //   (err) => {
-        //     btn.value = "Send Email";
-        //     alert(JSON.stringify(err));
-        //   }
-        // );
+         emailjs.sendForm(serviceID, templateID, this).then(
+           () => {
+             btn.value = "Send Email";
+             Swal.fire("Message Sent Successfully", "", "success");
+             document.querySelector("#name").value = "";
+             document.querySelector("#email").value = "";
+             document.querySelector("#phone").value = "";
+             document.querySelector("#location").value = "";
+             document.querySelector("#message").value = "";
+           },
+           (err) => {
+             btn.value = "Send Email";
+             alert(JSON.stringify(err));
+           }
+         );
       });
 
   // ----------portfolio page js-------------
