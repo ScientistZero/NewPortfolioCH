@@ -627,58 +627,31 @@
                 <div class="title-line"></div>
                 <h2 class="display-four n5-color fw-semibold">Get In Touch</h2>
               </div>
-              <p class="fs-seven n4-color mt-2 mt-md-4">
+              <!--<p class="fs-seven n4-color mt-2 mt-md-4">
                 If you are going to use a passage of Lorem Ipsum, you need to be
                 sure there isn't anything embarrassing hidden in the middle of
                 text.
-              </p>
+              </p>-->
             </div>
-            <form method="post" name="contactme" data-netlify=="true"">
-              <!--Row 1-->
-              <div class="row">
-                  <!--first name-->
-                  <div class="col">
-                      <label class="form-label">First Name</label>
-                      <input type="text" name="firstName" class="form-control" placeholder="First Name"
-                          aria-label="First Name" required>
-                  </div>
-                  <!--last name-->
-                  <div class="col">
-                      <label class="form-label">Last Name</label>
-                      <input type="text" name="lastName" class="form-control" placeholder="Last Name"
-                          aria-label="Last Name" required>
-                  </div>
-              </div>
-              <!--row 2-->
-              <div class="row">
-                  <div class="col">
-                      <label class="form-label">Email</label>
-                      <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email">
-                  </div>
-                  <div class="col">
-                      <label class="form-label">Phone</label>
-                      <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
-                  </div>
-              </div>
-              <div class="row mb-1">
-                  <div class="col">
-                      <label class="form-label">Subject</label>
-                      <input type="text" name="subject" class="form-control" placeholder="Subject"
-                          aria-label="Subject" required>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col">
-                      <label class="form-label">Message</label>
-                      <textarea type="text" name="message" class="form-control" placeholder="Message"
-                          aria-label="Message" required></textarea>
-                  </div>
-
-              </div>
-              <input type="submit" class="btn btn-primary mt-2">Submit</button>
-
-            </input>
-          </form>
+            <form method="post" name="contactme" data-netlify="true">
+<input class="hidden" name="hpfield">
+<p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+</p>
+<p>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+</p>
+<p>
+    <label for="comments">Comments:</label><br/>
+    <textarea name="comments" id="comments"></textarea>
+</p>
+<div data-netlify-recaptcha="true"></div>
+<p>
+    <input type="submit">
+</p>
+</form>
           </div>
         </section>
 
