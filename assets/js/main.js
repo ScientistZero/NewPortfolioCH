@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
     // contact -Send us a message
-    const btn = document.getElementById("contact-submit-btn");
+    /*const btn = document.getElementById("contact-submit-btn");
     btn && emailjs.init("fpwvo3ThNZIbrHexI");
     const contactForm = document.getElementById("contact-form");
     contactForm &&
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
              alert(JSON.stringify(err));
            }
          );
-      });
+      });*/
 
   // ----------portfolio page js-------------
 
