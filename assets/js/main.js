@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  //  stored preference
-  let currentMode = localStorage.getItem("mode") || "light";
-  updateUI(currentMode === "dark");
+ //  stored preference
+let currentMode = localStorage.getItem("mode") || "dark"; // Changed "light" to "dark"
+updateUI(currentMode === "dark");
 
   // Add click event listener to all toggle buttons
   toggleButtons.forEach((toggleBtn) => {
